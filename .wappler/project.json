@@ -1,0 +1,49 @@
+{
+  "projectName": "toolbox",
+  "folder": "fead3735-c668-4be8-90df-fd428481fbc0",
+  "projectServerModel": "PHP",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "apache",
+  "targets": [
+    {
+      "webServerPort": 8100,
+      "webServerLang": "PHP",
+      "PHPVersion": "7.3.x",
+      "databaseType": "postgres",
+      "databasePort": 9906,
+      "postgresVersion": "11.1.x",
+      "postgres_rootName": "db_user",
+      "postgres_rootPassword": "94XJR7yb",
+      "postgres_databaseName": "toolbox",
+      "targetType": "docker",
+      "webServer": "apache",
+      "noSampleData": true,
+      "name": "toolbox",
+      "remoteURL": "http://localhost:8100"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "appConnect",
+      "type": "local"
+    },
+    {
+      "name": "fontawesome_5",
+      "type": "cdn"
+    },
+    {
+      "name": "jquery_slim_34",
+      "type": "local"
+    },
+    {
+      "name": "fontawesome_4",
+      "type": "local"
+    },
+    {
+      "name": "bootstrap4",
+      "type": "pulse"
+    }
+  ],
+  "activeTarget": "toolbox"
+}

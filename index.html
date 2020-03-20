@@ -35,7 +35,7 @@
 							<div class="navbar-nav">
 								<a class="nav-item nav-link active" href="./">Home</a>
 								<a class="nav-item nav-link" href="./test">IMDG</a>
-								<a class="nav-item nav-link" href="#">Contact</a>
+								<a class="nav-item nav-link" href="./admin">Admin</a>
 							</div>
 						</div>
 						<div class="navbar-nav justify-content-end d-none d-lg-flex ml-md-auto">
@@ -48,8 +48,9 @@
 			</div>
 		</div>
 	</header>
-	<div is="dmx-route" path="/" url="_home.html" id="home" exact></div>
-	<div is="dmx-route" path="/test" url="_test.html" id="test"></div>
+	<div is="dmx-route" path="/" url="views/_home.html" id="home" exact></div>
+	<div is="dmx-route" path="/test" url="views/_test.html" id="test"></div>
+	<div is="dmx-route" path="/admin" url="views/_admin.html" id="admin"></div>
 
 
 	<script src="bootstrap/4/js/popper.min.js"></script>
