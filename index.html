@@ -1,60 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta name="ac:route" content="/" />
+		<base href="/" />
+		<meta charset="UTF-8" />
+		<title>Toolkit</title>
 
-<head>
-	<meta name="ac:route" content="/">
-	<base href="/">
-	<script src="dmxAppConnect/dmxAppConnect.js"></script>
-	<meta charset="UTF-8">
-	<title>Toolkit</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+	</head>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<script src="dmxAppConnect/dmxBootstrap4Navigation/dmxBootstrap4Navigation.js" defer=""></script>
-	<script src="dmxAppConnect/dmxRouting/dmxRouting.js" defer=""></script>
-	<script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer=""></script>
+	<body id="index">
+		<h1>Velg farlig-gods klasser</h1>
+
+		<p>
+			Velg første klasse
+			<select
+				id="select1"
+				class="form-control"
+				onchanged="checkSeparation(select1.value, select2.value)"
+			>
+				<option value="0">Klasse 1.1 - 1.2 - 1.5</option>
+				<option value="1">Klasse 1.3 - 1.6</option>
+				<option value="2">Klasse 1.4</option>
+				<option value="3">Klasse 2.1</option>
+				<option value="4">Klasse 2.2</option>
+				<option value="5">Klasse 2.3</option>
+				<option value="6">Klasse 3</option>
+				<option value="7">Klasse 4.1</option>
+				<option value="8">Klasse 4.2</option>
+				<option value="9">Klasse 4.3</option>
+				<option value="10">Klasse 5.1</option>
+				<option value="11">Klasse 5.2</option>
+				<option value="12">Klasse 6.1</option>
+				<option value="13">Klasse 6.2</option>
+				<option value="14">Klasse 7</option>
+				<option value="15">Klasse 8</option>
+				<option value="16">Klasse 9</option>
+			</select>
+		</p>
+
+		<p>
+			Velg andre klasse
+			<select
+				id="select2"
+				class="form-control"
+				onchanged="checkSeparation(select1.value, select2.value)"
+			>
+				<option value="0">Klasse 1.1 - 1.2 - 1.5</option>
+				<option value="1">Klasse 1.3 - 1.6</option>
+				<option value="2">Klasse 1.4</option>
+				<option value="3">Klasse 2.1</option>
+				<option value="4">Klasse 2.2</option>
+				<option value="5">Klasse 2.3</option>
+				<option value="6">Klasse 3</option>
+				<option value="7">Klasse 4.1</option>
+				<option value="8">Klasse 4.2</option>
+				<option value="9">Klasse 4.3</option>
+				<option value="10">Klasse 5.1</option>
+				<option value="11">Klasse 5.2</option>
+				<option value="12">Klasse 6.1</option>
+				<option value="13">Klasse 6.2</option>
+				<option value="14">Klasse 7</option>
+				<option value="15">Klasse 8</option>
+				<option value="16">Klasse 9</option>
+			</select>
+		</p>
+	</body>
 
 	<script src="js/functions.js"></script>
-	<link rel="stylesheet" href="bootstrap/4/pulse/bootstrap.min.css" />
-	<script src="dmxAppConnect/dmxBootstrap4Alert/dmxBootstrap4Alert.js" defer=""></script>
-</head>
-
-<body is="dmx-app" id="index">
-	<header class="bg-light">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col">
-					<nav class="navbar navbar-expand-lg bg-light navbar-light">
-						<a class="navbar-brand mr-auto ml-auto" href="#"><i class="fa fa-codepen"></i>&nbsp; Toolbox</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse justify-content-center" id="navbar1_collapse">
-							<div class="navbar-nav">
-								<a class="nav-item nav-link active" href="./">Home</a>
-								<a class="nav-item nav-link" href="./test">IMDG</a>
-								<a class="nav-item nav-link" href="./admin">Admin</a>
-							</div>
-						</div>
-						<div class="navbar-nav justify-content-end d-none d-lg-flex ml-md-auto">
-							<a class="nav-item nav-link" href="#"><i class="fa fa-slack"></i></a>
-							<a class="nav-item nav-link" href="#"><i class="fa fa-twitter"></i></a>
-							<a class="nav-item nav-link" href="#"><i class="fa fa-facebook"></i></a>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div is="dmx-route" path="/" url="views/_home.html" id="home" exact></div>
-	<div is="dmx-route" path="/test" url="views/_test.html" id="test"></div>
-	<div is="dmx-route" path="/admin" url="views/_admin.html" id="admin"></div>
-
-
-	<script src="bootstrap/4/js/popper.min.js"></script>
-	<script src="bootstrap/4/js/bootstrap.min.js"></script>
-</body>
-
+  
 </html>
